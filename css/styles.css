@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Cossette+Titre:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background-image: linear-gradient( 135deg, #CE9FFC 10%, #7367F0 100%);
+    border: 1px solid #000000;
+}
+
+header img{
+    width: 8rem;
+    display: flex;
+    margin: auto;
+}
+
+nav a{
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    padding: 10px;  
+}
+
+main h1{
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2rem;
+    font-family: 'verdana', sans-serif;
+}
+
+.container-products{
+    display: flex;
+    justify-content: space-evenly;
+} 
+
+.container-products img{
+    width: 15rem;
+    height: 15rem;
+    display: flex;
+    margin: auto;
+}
+
+.container-products article{
+    border: 1px solid #000000;
+    padding: 1rem;
+    width: 20rem;
+    height: 25rem;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+}
+
