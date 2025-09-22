@@ -5,30 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-}
-
-header{
-    background-image: linear-gradient( 135deg, #CE9FFC 10%, #7367F0 100%);
-    border: 1px solid #000000;
-}
-
-header img{
-    width: 8rem;
-    display: flex;
-    margin: auto;
-}
-
-nav a{
-    text-decoration: none;
-    color: #000000;
-    font-weight: 500;
-}
-
-nav ul{
-    display: flex;
-    list-style: none;
-    gap: 2rem;
-    padding: 10px;  
+    color: #1C1C1C;
 }
 
 main h1{
@@ -38,24 +15,82 @@ main h1{
     font-family: 'verdana', sans-serif;
 }
 
-.container-products{
-    display: flex;
-    justify-content: space-evenly;
-} 
+body{
+    background-color: #F5F5DC;
+}
 
-.container-products img{
-    width: 15rem;
-    height: 15rem;
+.logo-nav{
+    width: 5rem;
+}
+
+.card-productos{
+    width: 16rem;
+}
+
+.boton-productos{
+    margin-top: auto;
+    border: none;
+    background-color: #2E7D32;
+    border-radius: 10px;
+    font-weight: 500;
+    padding: 1rem;
+    border: 1px solid #000000
+}
+
+.foto-productos{
+    width: 100%;
+    height: 14rem;
     display: flex;
     margin: auto;
 }
 
-.container-products article{
-    border: 1px solid #000000;
-    padding: 1rem;
-    width: 20rem;
-    height: 25rem;
-    background-color: #F5F5F5;
-    border-radius: 10px;
+.carrusel{
+    display: flex;
+    overflow-x: hidden;
+    background: linear-gradient(90deg, #2E7D32, #8D6E63);
+    margin: 20px 0;
+    width: 100%;
 }
 
+.carrusel img{
+    width: 200px;
+    padding: 20px;
+    object-fit: contain;
+    margin-right: 2rem;
+    border-radius: 25rem
+}
+
+@keyframes scroll {
+    0% { transform: translateX() }
+    100% { transform: translateX(-50%) }
+}
+
+.carrusel-track{
+    display: flex;
+    animation: scroll 10s linear infinite;
+}
+
+.footer-copy{
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+footer{
+    background-color: #2E7D32;
+    color: #000000;
+}
+.footer-redes{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+
+footer img{
+    width: 3rem;
+}
+
+@media (max-width: 768px) {
+    
+}
