@@ -1,54 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Mistic</title>
-    <link rel="stylesheet" href="./css/styles.css"/>
-  </head>
-  <body>
-    <header>
-      <a href="./index.html"><img src="./assets/mistic_logo.png" alt="Logo"/></a>
-      <nav>
-        <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="./pages/productos.html">Productos</a></li>
-          <li><a href="./pages/promociones.html">Promociones</a></li>
-          <li><a href="./pages/nosotros.html">Nosotros</a></li>
-          <li><a href="./pages/contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <h1>Productos</h1>
-      <section class="container-products">
-          <article>
-            <img src="./assets/Sahumerios-cannabis.jpeg" alt="sahumerio">
-            <h2>Sahumerios Cannabis</h2>
-            <p>$3000</p>
-            <button>Agregar al carrito</button>
-          </article>
-          <article>
-            <img src="./assets/conos.jpeg" alt="Conos incienso">
-            <h2>Conos Para Cascadas</h2>
-            <p>$3000</p>
-            <button>Agregar al carrito</button>
-          </article>
-          <article>
-            <img src="./assets/carta-tarot.jpeg" alt="Cartas tarot">
-            <h2>Cartas tarot edicion limitada</h2>
-            <p> $3000</p>
-            <button>Agregar al carrito</button>
-          </article>
-          <article>
-            <img src="./assets/bombitas-defumacion.jpeg" alt="bombitas">
-            <h2>Bombitas defumacion</h2>
-            <p>$3000</p>
-            <button>Agregar al carrito</button>
-          </article>
-      </section>
 
-      <div class="carrusel">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mistic</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html"><img class="logo-nav" src="./assets/logo-tienda.jpeg" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/promociones.html">Promociones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- Section products -->
+    <section>
+      <h1>Productos</h1>
+      <div class="container d-flex justify-content-evenly">
+        <div class="row d-flex gap-3 col-mb-3">
+          <article class="card card-productos col-mb-3">
+            <img class="foto-productos" src="./assets/Sahumerios-cannabis.jpeg" alt="sahumerios de cannabis">
+            <div class="card-body d-flex flex-column">
+              <h2 class="card-title">Sahumerios Cannabis</h2>
+              <p class="card-text">$5000</p>
+              <button class="boton-productos">Añadir al carrito</button>
+            </div>
+          </article>
+          <article class="card card-productos col-mb-3">
+            <img class="foto-productos" src="./assets/bombitas-defumacion.jpeg" alt="bombitas de defumacion">
+            <div class="card-body d-flex flex-column">
+              <h2 class="card-title">Bombita de defumacion</h2>
+              <p class="card-text">$5000</p>
+              <button class="boton-productos">Añadir al carrito</button>
+            </div>
+          </article>
+          <article class="card card-productos col-mb-3">
+            <img class="foto-productos" src="./assets/conos.jpeg" alt="conos para cascada">
+            <div class="card-body d-flex flex-column">
+              <h2 class="card-title">Conos para cascada</h2>
+              <p class="card-text">$5000</p>
+              <button class="boton-productos">Añadir al carrito</button>
+            </div>
+          </article>
+          <article class="card card-productos col-mb-3">
+            <img class="foto-productos" src="./assets/carta-tarot.jpeg" alt="Cartas tarot edicion especial">
+            <div class="card-body d-flex flex-column">
+              <h2 class="card-title">Cartas tarot edicion especial</h2>
+              <p class="card-text">$5000</p>
+              <button class="boton-productos">Añadir al carrito</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- Section carrusel -->
+    <div class="carrusel">
+      <div class="carrusel-track">
+        <img src="./assets/carrusel/f4d9ff796b4a70651883f6ece878ce6b.jpg" alt="iluminarte logo">
+        <img src="./assets/carrusel/images.jpg" alt="aromanza logo">
+        <img src="./assets/carrusel/Inciensos.jpg" alt="sagrada madre logo">
+        <img src="./assets/carrusel/logo_NUNA_TERRA_web.png" alt="nuna terra logo">
+        <img src="./assets/carrusel/tribalsoul.png" alt="tribal soul logo">
+        <img src="./assets/carrusel/saphirus.png" alt="saphirus logo">
+        <!-- Repite logos de carrusel para suavisar el corte del loop -->
         <img src="./assets/carrusel/f4d9ff796b4a70651883f6ece878ce6b.jpg" alt="iluminarte logo">
         <img src="./assets/carrusel/images.jpg" alt="aromanza logo">
         <img src="./assets/carrusel/Inciensos.jpg" alt="sagrada madre logo">
@@ -56,48 +99,60 @@
         <img src="./assets/carrusel/tribalsoul.png" alt="tribal soul logo">
         <img src="./assets/carrusel/saphirus.png" alt="saphirus logo">
       </div>
-
-      <section class="container-discounts">
-        <article>
+    </div>
+    <!-- Section discounts -->
+    <section class="container text-center mb-3">
+      <div class="row gap-5">
+        <article class="card col-xl-2 col-mb-4">
           <img src="./assets/Sahumerios-cannabis.jpeg" alt="">
-          <p>$2999</p>
-          <p class="old-price">$3000</p>
+          <div class="car-body">
+            <p class="card-text">$2999</p>
+            <p class="card-text old-price">$3000</p>
+          </div>
         </article>
-        <article>
+        <article class="card col-xl-2 col-mb-4">
           <img src="./assets/Sahumerios-cannabis.jpeg" alt="">
-          <p>$2999</p>
-          <p class="old-price">$3000</p>
+          <div class="car-body">
+            <p class="card-text">$2999</p>
+            <p class="card-text old-price">$3000</p>
+          </div>
         </article>
-        <article>
+        <article class="card col-xl-2 col-mb-4">
           <img src="./assets/Sahumerios-cannabis.jpeg" alt="">
-          <p>$2999</p>
-          <p class="old-price">$3000</p>
+          <div class="car-body">
+            <p class="card-text">$2999</p>
+            <p class="card-text old-price">$3000</p>
+          </div>
         </article>
-        <article>
+        <article class="card col-xl-2 col-mb-4">
           <img src="./assets/Sahumerios-cannabis.jpeg" alt="">
-          <p>$2999</p>
-          <p class="old-price">$3000</p>
+          <div class="car-body">
+            <p class="card-text">$2999</p>
+            <p class="card-text old-price">$3000</p>
+          </div>
         </article>
-        <article>
+        <article class="card col-xl-2 col-mb-4">
           <img src="./assets/Sahumerios-cannabis.jpeg" alt="">
-          <p>$2999</p>
-          <p class="old-price">$3000</p>
+          <div class="car-body">
+            <p class="card-text">$2999</p>
+            <p class="card-text old-price">$3000</p>
+          </div>
         </article>
-        <article>
-          <img src="./assets/Sahumerios-cannabis.jpeg" alt="">
-          <p>$2999</p>
-          <p class="old-price">$3000</p>
-        </article>
-      </section>
-    </main>
-
-    <footer>
-      <p>© 2025 Mistic. Todos los derechos reservados.</p>
-      <div class="footer-redes">
-        <a href="#"><img src="./assets/redes-footer/facebook.png" alt="Facebook" /></a>
-        <a href="#"><img src="./assets/redes-footer/instagram.png" alt="Instagram" /></a>
-        <a href="#"><img src="./assets/redes-footer/twitter.png" alt="Twitter" /></a>
       </div>
-    </footer>
-  </body>
+    </section>
+  </main>
+
+  <footer>
+    <p class="footer-copy">© 2025 Mistic. Todos los derechos reservados.</p>
+    <div class="footer-redes">
+      <a href="#"><img src="./assets/redes-footer/facebook.png" alt="Facebook" /></a>
+      <a href="#"><img src="./assets/redes-footer/instagram.png" alt="Instagram" /></a>
+      <a href="#"><img src="./assets/redes-footer/twitter.png" alt="Twitter" /></a>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
