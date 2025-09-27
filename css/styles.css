@@ -90,13 +90,10 @@ footer {
 .footer-redes {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 3rem;
     padding-bottom: 10px;
 }
 
-footer img {
-    width: 3rem;
-}
 
 .new-price {
     font-size: 1.5rem;
@@ -140,6 +137,12 @@ button:hover {
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 1rem;
+}
+
+.section-merch h2{
+    text-align: center;
+    font-weight: 600;
+    font-style: italic;
 }
 
 
