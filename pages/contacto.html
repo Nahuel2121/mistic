@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mistic - Contacto</title>
+  <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+  <!-- Link bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <!-- Link de iconos -->
+  <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+  <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+  <link href='https://cdn.boxicons.com/fonts/animations.min.css' rel='stylesheet'>
+  <link href='https://cdn.boxicons.com/fonts/transformations.min.css' rel='stylesheet'>
+  <!-- Link css propio -->
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img class="logo-nav" src="../assets/mistic_logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./promociones.html">Promociones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./nosotros.html">Nosotros</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <h1>Contacto</h1>
+    <div class="form-mapa">
+      <form class="form-contacto" action="#">
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="floatingName" placeholder="Nombre">
+          <label for="floatingName">Nombre</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Email</label>
+        </div>
+        <div class="form-floating">
+          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+            style="height: 100px"></textarea>
+          <label for="floatingTextarea2">Comentarios</label>
+        </div>
+        <input class="boton-form" type="submit" value="Enviar">
+      </form>
+      <section class="section-ubicacion">
+        <h2>📍 Nuestra ubicación</h2>
+        <div class="mapa">
+          <iframe class="mapa-embed"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2764.26662563222!2d-58.75972153009988!3d-34.520993021919935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc981edf385943%3A0xb96eb60a171ed971!2sPizza%20Pueblo!5e0!3m2!1ses-419!2sar!4v1759088393734!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </section>
+    </div>
+
+    <section class="informacion">
+      <p><i class="bx bx-location"></i> Av. Siempre viva</p>
+      <p><i class="bx bx-phone"></i> 11 6666-6666</p>
+      <p><i class='bx  bx-envelope-open'></i> Jaimitojesus@gmail.com</p>
+    </section>
+
+  </main>
+  <footer>
+    <p class="footer-copy">© 2025 Mistic. Todos los derechos reservados.</p>
+    <div class="footer-redes">
+      <a class="iconos-footer" href="#"><i class='bxl bx-twitter-x bx-burst bx-sm'></i></a>
+      <a class="iconos-footer" href="#"><i class="bxl bx-facebook-circle bx-burst bx-sm"></i></a>
+      <a class="iconos-footer" href="#"><i class="bxl bx-instagram bx-burst bx-sm"></i></a>
+    </div>
+  </footer>
+  <!-- Link de JS de bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
