@@ -98,6 +98,7 @@ footer {
 .new-price {
     font-size: 1.5rem;
     font-family: 'verdana', sans-serif;
+    text-align: center;
 }
 
 .old-price {
@@ -105,6 +106,7 @@ footer {
     color: #FF0000;
     font-size: 1.2rem;
     font-family: 'verdana', sans-serif;
+    text-align: center;
 }
 
 button:hover {
@@ -145,6 +147,87 @@ button:hover {
     font-style: italic;
 }
 
+.card-promociones{
+    width: 16rem;
+}
+
+.foto-promociones{
+    height: 16rem;
+    object-fit:cover;
+    border-radius: 10px 10px 0 0
+}
+
+.promo-text{
+    text-align: center;
+    font-weight: 500;
+}
+
+.form-contacto{
+    width: 80%;
+    margin: 1rem;
+    border: 2px solid #7367F0;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+
+.boton-form{
+    background-color: #2E7D32;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    padding: 1rem;
+    border: 1px solid #000000;
+    margin-top: 1rem;
+}
+
+.boton-form:hover{
+    background-color: #D4AF37;
+}
+
+.mapa-embed{
+    width: 100%;
+    height: 20rem;
+}
+
+.form-mapa{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+    width: 100%;
+}
+
+.section-ubicacion h2{
+    text-align: center;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.informacion{
+    text-align: center;
+    font-weight: 500;
+    justify-content: center;
+    padding-top: 7rem;
+}
+
+.foto-nosotros{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.nosotros{
+    font-family: Verdana, sans-serif;
+    font-style: italic;
+    margin: 20px 0;
+}
+
+.nosotros p{
+    width: 80%;
+    padding-left: 10px;
+}
+
 
 @media (max-width: 768px) {
     .cards {
@@ -161,5 +244,18 @@ button:hover {
 
     .cards::-webkit-scrollbar {
         display: none;
+    }
+
+    .contenedor-promociones{
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .form-mapa{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
     }
 }
