@@ -1,0 +1,80 @@
+@mixin cards-productos {
+    width: 14em;
+    height: 25em;
+    margin-bottom: 1em;
+    border-radius: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+    flex-shrink: 0;
+}
+
+img {
+    width: 100%;
+    height: 60%;
+    object-fit: fill;
+}
+
+.card-body {
+    padding: 1em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 40%;
+    text-align: center;
+}
+
+@mixin card-discount {
+    width: 13rem;
+    height: 16rem;
+    transition: all 0.4s;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
+    font-size: 30px;
+    font-weight: 900;
+
+    &:hover {
+        border-radius: 15px;
+        cursor: pointer;
+        transform: scale(1.0);
+        box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
+        background: rgb(103, 151, 255);
+    }
+
+    &:hover .first-content {
+        height: 0px;
+        opacity: 0;
+        object-fit: fill;
+    }
+
+    &:hover .second-content {
+        opacity: 1;
+        font-size: 1.3rem;
+        transform: rotate(0deg);
+    }
+
+
+    .first-content {
+        height: 100%;
+        width: 100%;
+        transition: all 0.4s;
+        opacity: 1;
+        border-radius: 15px;
+        object-fit: fill;
+    }
+
+
+
+    .second-content {
+        height: 0%;
+        width: 100%;
+        text-align: center;
+        opacity: 0;
+        border-radius: 15px;
+        transition: all 0.4s;
+        transform: rotate(180deg);
+    }
+
+
+}

@@ -1,0 +1,30 @@
+@mixin carrusel {
+    display: flex;
+    overflow-x: hidden;
+    background: linear-gradient(90deg, #2E7D32, #8D6E63);
+    margin: 20px 0;
+    width: 100%;
+
+    img {
+        width: 170px;
+        height: 100%;
+        object-fit: contain;
+        padding: 20px 0;
+        margin-right: 2rem;
+        border-radius: 50%;
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+
+    .carrusel-track {
+        display: flex;
+        animation: scroll 10s linear infinite;
+    }
+}

@@ -1,0 +1,16 @@
+@mixin nav {
+    background: $bg-color2;
+
+    a {
+        color: white;
+        font-size: 1.2em;
+
+        &:hover {
+            color: $alternative-color2;
+        }
+    }
+
+    .logo-nav {
+        width: 3em;
+    }
+}

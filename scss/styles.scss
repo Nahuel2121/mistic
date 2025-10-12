@@ -1,0 +1,61 @@
+@import 'variables';
+@import 'breakpoints';
+@import 'fonts';
+@import 'navbar';
+@import 'cards';
+@import 'buttons';
+@import 'carrusel';
+@import 'footer';
+
+
+
+
+.navbar {
+  @include nav();
+  font-family: $fuente-opcional2;
+}
+
+
+body {
+  background: $bg-color;
+  color: $light;
+  margin: 0;
+  padding: 0;
+
+  h1 {
+    font-family: $fuente-secundaria;
+  }
+}
+
+.carrusel {
+  @include carrusel();
+}
+
+.contenedor-productos{
+    gap: 1.5rem;
+}
+
+.card-productos {
+  font-family: $fuente-opcional;
+  @include cards-productos();
+
+}
+
+.card-discount {
+  @include card-discount();
+
+  .new-price {
+    font-size: 1.5rem;
+    font-family: $fuente-secundaria;
+  }
+
+  .old-price {
+    @extend .new-price;
+    font-size: 1.2rem;
+    text-decoration: line-through 2px #ff0000;
+  }
+}
+
+.boton-productos {
+  @include animated-button();
+}
