@@ -1,5 +1,6 @@
-@mixin nav {
+.navbar {
     background: $bg-color2;
+    font-family: $fuente-opcional2;
 
     a {
         color: white;
