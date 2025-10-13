@@ -78,3 +78,61 @@ img {
 
 
 }
+
+@mixin bordes {
+    position: relative;
+    padding: 1rem;
+    border-radius: 15px;
+    background-color: #f4f4;
+    text-align: center;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        right: -2px;
+        bottom: -2px;
+        border-radius: 15px;
+        background: linear-gradient(90deg, #ff0000, #ffae00, #00ffff, #ff00ff, #ff0000);
+        background-size: 300%;
+        z-index: -1;
+        animation: rotate-border 4s linear infinite;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        right: 4px;
+        bottom: 4px;
+        background: #f4f4;
+        border-radius: 12px;
+        z-index: -1;
+    }
+
+    @keyframes rotate-border {
+        0% {
+            background-position: 0% 50%
+        }
+
+        100% {
+            background-position: 300% 50%
+        }
+    }
+}
+
+
+
+.card-promociones {
+    width: 15rem;
+    height: 25rem;
+    font-family: $fuente-opcional2;
+    color: $dark;
+    background-color: $secondary-color;
+}
+
+.card-borde {
+    @include bordes();
+}
