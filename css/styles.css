@@ -1,4 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Fugaz+One&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nosifer&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+.navbar {
+  background: #D9BBB0;
+  font-family: "lexend deca", sans-serif;
+}
+.navbar a {
+  color: white;
+  font-size: 1.2em;
+}
+.navbar a:hover {
+  color: #59372F;
+}
+.navbar .logo-nav {
+  width: 3em;
+}
+
 img {
   width: 100%;
   height: 60%;
@@ -14,50 +29,81 @@ img {
   text-align: center;
 }
 
-footer {
-  background-color: #222;
-  color: #fff;
+.card-promociones {
+  width: 15rem;
+  height: 25rem;
+  font-family: "lexend deca", sans-serif;
+  color: #02022b;
+  background-color: #530068;
+}
+
+.card-borde {
+  position: relative;
+  padding: 1rem;
+  border-radius: 15px;
+  background-color: rgba(255, 68, 255, 0.2666666667);
   text-align: center;
-  padding: 20px 0;
-  font-family: "lexend deca", sans-serif;
 }
-footer a {
+.card-borde::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: 15px;
+  background: linear-gradient(90deg, #ff0000, #ffae00, #00ffff, #ff00ff, #ff0000);
+  background-size: 300%;
+  z-index: -1;
+  animation: rotate-border 4s linear infinite;
+}
+.card-borde::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  background: rgba(255, 68, 255, 0.2666666667);
+  border-radius: 12px;
+  z-index: -1;
+}
+@keyframes rotate-border {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 300% 50%;
+  }
+}
+
+.boton-productos {
+  padding: 1em 1em;
+  font-size: 12px;
+  font-family: "rubik", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 600;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+}
+.boton-productos:hover {
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
   color: #fff;
-  text-decoration: none;
-  margin: 0 10px;
+  transform: translateY(-7px);
 }
-footer a:hover {
-  text-decoration: underline;
-}
-footer p {
-  margin: 5px 0;
-}
-
-.navbar {
-  background: #D9BBB0;
-}
-.navbar a {
-  color: white;
-  font-size: 1.2em;
-}
-.navbar a:hover {
-  color: #59372F;
-}
-.navbar .logo-nav {
-  width: 3em;
-}
-.navbar {
-  font-family: "lexend deca", sans-serif;
-}
-
-body {
-  background: #8C5245;
-  color: #f5f5f5;
-  margin: 0;
-  padding: 0;
-}
-body h1 {
-  font-family: "montserrat", sans-serif;
+.boton-productos:active {
+  transform: translateY(-1px);
 }
 
 .carrusel {
@@ -86,6 +132,153 @@ body h1 {
 .carrusel .carrusel-track {
   display: flex;
   animation: scroll 10s linear infinite;
+}
+
+.form-mapa {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 10px;
+}
+.form-mapa .form-contacto {
+  width: 45%;
+  padding-left: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  position: relative;
+  padding: 1rem;
+  border-radius: 15px;
+  background-color: rgba(255, 68, 255, 0.2666666667);
+  text-align: center;
+}
+.form-mapa .form-contacto::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: 15px;
+  background: linear-gradient(90deg, #ff0000, #ffae00, #00ffff, #ff00ff, #ff0000);
+  background-size: 300%;
+  z-index: -1;
+  animation: rotate-border 4s linear infinite;
+}
+.form-mapa .form-contacto::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  background: rgba(255, 68, 255, 0.2666666667);
+  border-radius: 12px;
+  z-index: -1;
+}
+@keyframes rotate-border {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 300% 50%;
+  }
+}
+.form-mapa .form-contacto {
+  background: #000;
+}
+.form-mapa .boton-form {
+  padding: 1em 1em;
+  font-size: 12px;
+  font-family: "rubik", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 600;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+}
+.form-mapa .boton-form:hover {
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+.form-mapa .boton-form:active {
+  transform: translateY(-1px);
+}
+.form-mapa .boton-form {
+  width: 50%;
+  margin: 20px 0;
+}
+.form-mapa .boton-form:hover {
+  background-color: #530068;
+  box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
+}
+.form-mapa .section-ubicacion {
+  width: 45%;
+  height: 300px;
+  margin: auto;
+}
+.form-mapa .mapa, .form-mapa .mapa-embed {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 576px) {
+  .form-mapa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form-mapa .form-contacto,
+  .form-mapa .section-ubicacion {
+    width: 80%;
+    margin: 20px 0;
+  }
+}
+
+.informacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 30px;
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-family: "lexend deca", sans-serif;
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+footer p {
+  margin: 5px 0;
+}
+
+body {
+  background: #8C5245;
+  color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+body h1 {
+  font-family: "montserrat", sans-serif;
 }
 
 .contenedor-productos {
@@ -155,35 +348,6 @@ body h1 {
 .card-discount .old-price {
   font-size: 1.2rem;
   text-decoration: line-through 2px #ff0000;
-}
-
-.boton-productos {
-  padding: 1em 1em;
-  font-size: 12px;
-  font-family: "rubik", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 2.5px;
-  font-weight: 600;
-  color: #000;
-  background-color: #fff;
-  border: none;
-  border-radius: 45px;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease 0s;
-  cursor: pointer;
-  outline: none;
-  width: 90%;
-  display: block;
-  margin: 0 auto;
-}
-.boton-productos:hover {
-  background-color: #23c483;
-  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
-  color: #fff;
-  transform: translateY(-7px);
-}
-.boton-productos:active {
-  transform: translateY(-1px);
 }
 
 /*# sourceMappingURL=styles.css.map */
