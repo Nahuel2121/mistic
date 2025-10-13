@@ -5,16 +5,8 @@
 @import 'cards';
 @import 'buttons';
 @import 'carrusel';
+@import 'contacto';
 @import 'footer';
-
-
-
-
-.navbar {
-  @include nav();
-  font-family: $fuente-opcional2;
-}
-
 
 body {
   background: $bg-color;
@@ -27,18 +19,13 @@ body {
   }
 }
 
-.carrusel {
-  @include carrusel();
-}
-
-.contenedor-productos{
-    gap: 1.5rem;
+.contenedor-productos {
+  gap: 1.5rem;
 }
 
 .card-productos {
   font-family: $fuente-opcional;
   @include cards-productos();
-
 }
 
 .card-discount {
@@ -54,8 +41,4 @@ body {
     font-size: 1.2rem;
     text-decoration: line-through 2px #ff0000;
   }
-}
-
-.boton-productos {
-  @include animated-button();
 }
