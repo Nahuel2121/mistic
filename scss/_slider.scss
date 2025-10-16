@@ -1,0 +1,16 @@
+body{
+  background-color: $dark;
+  color: $light;
+}
+
+.light{
+  background-color: $alternative-color;
+  box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.705);
+
+  .navbar{
+    background: $light;
+    a{
+        color: $dark;
+    }
+  }
+}
