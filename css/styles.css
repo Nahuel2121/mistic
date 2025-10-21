@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Fugaz+One&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nosifer&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 .navbar {
-  background: rgb(34, 34, 33);
+  background: #0d200c;
   font-family: "lexend deca", sans-serif;
 }
 .navbar a {
@@ -8,7 +8,7 @@
   font-size: 1.2em;
 }
 .navbar a:hover {
-  color: #8C5245;
+  color: #0f3006;
 }
 
 #checkbox {
@@ -342,12 +342,12 @@
   }
 }
 body {
-  background-color: #02022b;
+  background-color: #0f3006;
   color: #f5f5f5;
 }
 
 .light {
-  background-color: #A68572;
+  background-color: #4b92b3;
   box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.705);
 }
 .light .navbar {
@@ -377,7 +377,7 @@ img {
   height: 25rem;
   font-family: "lexend deca", sans-serif;
   color: #02022b;
-  background-color: #530068;
+  background-color: #0ca15c;
 }
 
 .card-borde {
@@ -514,6 +514,49 @@ img {
   transform: translateY(-1px);
 }
 
+.banner {
+  background-image: url(../assets/banner/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.banner .inicio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 20%;
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.banner .inicio h1 {
+  font-family: "montserrat", sans-serif;
+  font-weight: 700;
+  color: #4b92b3;
+}
+.banner .inicio .welcome {
+  width: 10rem;
+  height: 10rem;
+}
+.banner .inicio .subtitulo {
+  width: 40%;
+  text-align: center;
+  padding: 20px;
+  font-family: "lexend deca", sans-serif;
+  color: #9e9c0f;
+  font-size: 1.5rem;
+}
+.banner .inicio .icono {
+  padding-bottom: 20px;
+  color: #9e9c0f;
+}
+
 .carrusel {
   display: flex;
   overflow-x: hidden;
@@ -627,7 +670,7 @@ img {
   margin: 20px 0;
 }
 .form-mapa .boton-form:hover {
-  background-color: #530068;
+  background-color: #0ca15c;
   box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
 }
 .form-mapa .section-ubicacion {
