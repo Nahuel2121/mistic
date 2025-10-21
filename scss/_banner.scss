@@ -1,0 +1,50 @@
+.banner {
+    background-image: url(../assets/banner/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+
+
+    .inicio {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgba($color: #000000, $alpha: 0.4);
+        border-radius: 20%;
+        position: absolute;
+        top: 46%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        h1 {
+            font-family: $fuente-secundaria;
+            font-weight: 700;
+            color: $alternative-color;
+        }
+
+
+        .welcome {
+            width: 10rem;
+            height: 10rem;
+        }
+
+        .subtitulo {
+            width: 40%;
+            text-align: center;
+            padding: 20px;
+            font-family: $fuente-opcional2;
+            color: $alternative-color2;
+            font-size: 1.5rem;
+        }
+        .icono{
+            padding-bottom: 20px;
+            color: $alternative-color2;
+        }
+    }
+
+}
