@@ -4,7 +4,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mistic</title>
+  <meta name="description"
+    content="Bienvenidos a Mistic, tu tienda esotérica. Encuentra sahumerios, cartas de tarot, péndulos, y productos para el bienestar y la energía." />
+  <meta name="keywords"
+    content="Mistic, tienda esotérica, esoterismo, sahumerios, cartas de tarot, péndulos, bienestar, energía, productos esotéricos" />
+  <title>Mistic | Tienda Esotérica de Sahumerios, Tarot y Bienestar</title>
   <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
   <!-- Link bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -12,8 +16,6 @@
   <!-- Link de iconos -->
   <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
   <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
-  <link href='https://cdn.boxicons.com/fonts/animations.min.css' rel='stylesheet'>
-  <link href='https://cdn.boxicons.com/fonts/transformations.min.css' rel='stylesheet'>
   <!-- Link css propio -->
   <link rel="stylesheet" href="./css/styles.css" />
 </head>
@@ -33,10 +35,10 @@
             </label>
           </div>
         </button>
-        <div class="collapse navbar-collapse justify-content-evenly gap-3" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse justify-content-center gap-3" id="navbarSupportedContent">
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active-danger" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./pages/productos.html">Productos</a>
@@ -48,78 +50,14 @@
               <a class="nav-link" href="./pages/contacto.html">Contacto</a>
             </li>
           </ul>
+          <a href="#" class="cart-icon">
+            <i class='bx bxs-cart bx-md'></i>
+          </a>
         </div>
-        <label class="switch">
-          <input id="input" type="checkbox" checked="darkTheme" onclick="document.body.classList.toggle('light')" />
-          <div class="slider round">
-            <div class="sun-moon">
-              <svg id="moon-dot-1" class="moon-dot" viewBox="0 0 100 100">
-                <circle cx="50" cy="50" r="50"></circle>
-              </svg>
-              <svg id="moon-dot-2" class="moon-dot" viewBox="0 0 100 100">
-                <circle cx="50" cy="50" r="50"></circle>
-              </svg>
-              <svg id="moon-dot-3" class="moon-dot" viewBox="0 0 100 100">
-                <circle cx="50" cy="50" r="50"></circle>
-              </svg>
-              <svg id="light-ray-1" class="light-ray" viewBox="0 0 100 100">
-                <circle cx="50" cy="50" r="50"></circle>
-              </svg>
-              <svg id="light-ray-2" class="light-ray" viewBox="0 0 100 100">
-                <circle cx="50" cy="50" r="50"></circle>
-              </svg>
-              <svg id="light-ray-3" class="light-ray" viewBox="0 0 100 100">
-                <circle cx="50" cy="50" r="50"></circle>
-              </svg>
-
-              <svg id="cloud-1" class="cloud-dark" viewBox="0 0 100 100">
-                <circle cx="50" cy="50" r="50"></circle>
-              </svg>
-              <svg id="cloud-2" class="cloud-dark" viewBox="0 0 100 100">
-                <circle cx="50" cy="50" r="50"></circle>
-              </svg>
-              <svg id="cloud-3" class="cloud-dark" viewBox="0 0 100 100">
-                <circle cx="50" cy="50" r="50"></circle>
-              </svg>
-              <svg id="cloud-4" class="cloud-light" viewBox="0 0 100 100">
-                <circle cx="50" cy="50" r="50"></circle>
-              </svg>
-              <svg id="cloud-5" class="cloud-light" viewBox="0 0 100 100">
-                <circle cx="50" cy="50" r="50"></circle>
-              </svg>
-              <svg id="cloud-6" class="cloud-light" viewBox="0 0 100 100">
-                <circle cx="50" cy="50" r="50"></circle>
-              </svg>
-            </div>
-            <div class="stars">
-              <svg id="star-1" class="star" viewBox="0 0 20 20">
-                <path
-                  d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z">
-                </path>
-              </svg>
-              <svg id="star-2" class="star" viewBox="0 0 20 20">
-                <path
-                  d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z">
-                </path>
-              </svg>
-              <svg id="star-3" class="star" viewBox="0 0 20 20">
-                <path
-                  d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z">
-                </path>
-              </svg>
-              <svg id="star-4" class="star" viewBox="0 0 20 20">
-                <path
-                  d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z">
-                </path>
-              </svg>
-            </div>
-          </div>
-        </label>
       </div>
     </nav>
   </header>
   <main>
-    <aside></aside>
     <section>
       <div class="banner">
         <div class="inicio">
@@ -129,167 +67,227 @@
             propósito
             de compartir bienestar</h2>
           <p class="subtitulo">Los invitamos a que vean nuestros productos</p>
-          <a href=""><i class="bx bx-arrow-down-stroke bx-fade-down bx-sm icono"></i></a>
+          <a href="#productos"><i class="bx bx-arrow-down-stroke bx-md icono"></i></a>
         </div>
       </div>
     </section>
 
     <!-- Section products -->
     <section>
-      <h3 class="text-center p-4">Productos</h3>
-      <div class="container">
+      <h3 class="text-center p-4 text-white" id="productos">Productos</h3>
+      <div class="container mb-5">
         <div class="row justify-content-center justify-content-md-between gap-3 gx-0">
           <article class="card-productos col-10 col-sm-5 col-md-4 col-lg-3 col-xl-2">
             <img src="./assets/productos/Sahumerios-cannabis.jpeg" alt="sahumerios de cannabis">
-            <div class="card-body d-flex flex-column">
-              <p class="card-title">Sahumerios Cannabis</p>
-              <p class="card-text">$5000</p>
-              <button class="boton-productos">Añadir al carrito</button>
+            <p class="card-titulo">Sahumerios Cannabis</p>
+            <div class="card-footer">
+              <span class="precio">$5000</span>
+              <button class="cart-btn">
+                <i class="bx bx-shopping-bag"></i>
+              </button>
             </div>
           </article>
           <article class="card-productos col-10 col-sm-5 col-md-4 col-lg-3 col-xl-2">
             <img src="./assets/productos/Sahumerios-cannabis.jpeg" alt="sahumerios de cannabis">
-            <div class="card-body d-flex flex-column">
-              <p class="card-title">Sahumerios Cannabis</p>
-              <p class="card-text">$5000</p>
-              <button class="boton-productos">Añadir al carrito</button>
+            <p class="card-titulo">Sahumerios Cannabis</p>
+            <div class="card-footer">
+              <span class="precio">$5000</span>
+              <button class="cart-btn"><i class="bx bx-shopping-bag"></i></button>
             </div>
           </article>
           <article class="card-productos col-10 col-sm-5 col-md-4 col-lg-3 col-xl-2">
             <img src="./assets/productos/Sahumerios-cannabis.jpeg" alt="sahumerios de cannabis">
-            <div class="card-body d-flex flex-column">
-              <p class="card-title">Sahumerios Cannabis</p>
-              <p class="card-text">$5000</p>
-              <button class="boton-productos">Añadir al carrito</button>
+            <p class="card-titulo">Sahumerios Cannabis</p>
+            <div class="card-footer">
+              <span class="precio">$5000</span>
+              <button class="cart-btn"><i class="bx bx-shopping-bag"></i></button>
             </div>
           </article>
           <article class="card-productos col-10 col-sm-5 col-md-4 col-lg-3 col-xl-2">
             <img src="./assets/productos/bombitas-defumacion.jpeg" alt="bombitas de defumacion">
-            <div class="card-body d-flex flex-column">
-              <p class="card-title">Bombita de defumacion</p>
-              <p class="card-text">$5000</p>
-              <button class="boton-productos">Añadir al carrito</button>
+            <p class="card-titulo">Bombita de defumacion</p>
+            <div class="card-footer">
+              <span class="precio">$5000</span>
+              <button class="cart-btn"><i class="bx bx-shopping-bag"></i></button>
             </div>
           </article>
           <article class="card-productos col-10 col-sm-5 col-md-4 col-lg-3 col-xl-2">
             <img src="./assets/productos/conos.jpeg" alt="conos para cascada">
-            <div class="card-body d-flex flex-column">
-              <p class="card-title">Conos para cascada</p>
-              <p class="card-text">$5000</p>
-              <button class="boton-productos">Añadir al carrito</button>
+            <p class="card-titulo">Conos para cascada</p>
+            <div class="card-footer">
+              <span class="precio">$5000</span>
+              <button class="cart-btn"><i class="bx bx-shopping-bag"></i></button>
             </div>
           </article>
           <article class="card-productos col-10 col-sm-5 col-md-4 col-lg-3 col-xl-2">
             <img src="./assets/productos/carta-tarot.jpeg" alt="Cartas tarot edicion especial">
-            <div class="card-body d-flex flex-column">
-              <p class="card-title">Cartas tarot edicion especial</p>
-              <p class="card-text">$5000</p>
-              <button class="boton-productos">Añadir al carrito</button>
+            <p class="card-titulo">Cartas tarot edicion especial</p>
+            <div class="card-footer">
+              <span class="card-text">$5000</span>
+              <button class="cart-btn"><i class="bx bx-shopping-bag"></i></button>
             </div>
           </article>
           <article class="card-productos col-10 col-sm-5 col-md-4 col-lg-3 col-xl-2">
             <img src="./assets/productos/Sahumerios-cannabis.jpeg" alt="sahumerios de cannabis">
-            <div class="card-body d-flex flex-column">
-              <p class="card-title">Sahumerios Cannabis</p>
-              <p class="card-text">$5000</p>
-              <button class="boton-productos">Añadir al carrito</button>
+            <p class="card-titulo">Sahumerios Cannabis</p>
+            <div class="card-footer">
+              <span class="precio">$5000</span>
+              <button class="cart-btn"><i class="bx bx-shopping-bag"></i></button>
             </div>
           </article>
           <article class="card-productos col-10 col-sm-5 col-md-4 col-lg-3 col-xl-2">
             <img src="./assets/productos/Sahumerios-cannabis.jpeg" alt="sahumerios de cannabis">
-            <div class="card-body d-flex flex-column">
-              <p class="card-title">Sahumerios Cannabis</p>
-              <p class="card-text">$5000</p>
-              <button class="boton-productos">Añadir al carrito</button>
+            <p class="card-titulo">Sahumerios Cannabis</p>
+            <div class="card-footer">
+              <span class="precio">$5000</span>
+              <button class="cart-btn"><i class="bx bx-shopping-bag"></i></button>
             </div>
           </article>
           <article class="card-productos col-10 col-sm-5 col-md-4 col-lg-3 col-xl-2">
             <img src="./assets/productos/Sahumerios-cannabis.jpeg" alt="sahumerios de cannabis">
-            <div class="card-body d-flex flex-column">
-              <p class="card-title">Sahumerios Cannabis</p>
-              <p class="card-text">$5000</p>
-              <button class="boton-productos">Añadir al carrito</button>
+            <p class="card-titulo">Sahumerios Cannabis</p>
+            <div class="card-footer">
+              <span class="precio">$5000</span>
+              <button class="cart-btn"><i class="bx bx-shopping-bag"></i></button>
             </div>
           </article>
           <article class="card-productos col-10 col-sm-5 col-md-4 col-lg-3 col-xl-2">
             <img src="./assets/productos/Sahumerios-cannabis.jpeg" alt="sahumerios de cannabis">
-            <div class="card-body d-flex flex-column">
-              <p class="card-title">Sahumerios Cannabis</p>
-              <p class="card-text">$5000</p>
-              <button class="boton-productos">Añadir al carrito</button>
+            <p class="card-titulo">Sahumerios Cannabis</p>
+            <div class="card-footer">
+              <span class="precio">$5000</span>
+              <button class="cart-btn"><i class="bx bx-shopping-bag"></i></button>
             </div>
           </article>
         </div>
       </div>
     </section>
+
     <!-- Section carrusel -->
-    <div class="carrusel">
-      <div class="carrusel-track">
-        <img src="./assets/carrusel/f4d9ff796b4a70651883f6ece878ce6b.jpg" alt="iluminarte logo">
-        <img src="./assets/carrusel/images.jpg" alt="aromanza logo">
-        <img src="./assets/carrusel/Inciensos.jpg" alt="sagrada madre logo">
-        <img src="./assets/carrusel/logo_NUNA_TERRA_web.png" alt="nuna terra logo">
-        <img src="./assets/carrusel/tribalsoul.png" alt="tribal soul logo">
-        <img src="./assets/carrusel/saphirus.png" alt="saphirus logo">
-        <!-- Se repiten logos del carrusel para suavisar el corte del loop -->
-        <img src="./assets/carrusel/f4d9ff796b4a70651883f6ece878ce6b.jpg" alt="iluminarte logo">
-        <img src="./assets/carrusel/images.jpg" alt="aromanza logo">
-        <img src="./assets/carrusel/Inciensos.jpg" alt="sagrada madre logo">
-        <img src="./assets/carrusel/logo_NUNA_TERRA_web.png" alt="nuna terra logo">
-        <img src="./assets/carrusel/tribalsoul.png" alt="tribal soul logo">
-        <img src="./assets/carrusel/saphirus.png" alt="saphirus logo">
+    <div class="marcas">
+      <h3 class="text-center py-2 text-white">Trabajamos las mejores marcas!</h3>
+      <div class="carrusel">
+        <div class="carrusel-track">
+          <img src="./assets/carrusel/f4d9ff796b4a70651883f6ece878ce6b.jpg" alt="iluminarte logo">
+          <img src="./assets/carrusel/images.jpg" alt="aromanza logo">
+          <img src="./assets/carrusel/Inciensos.jpg" alt="sagrada madre logo">
+          <img src="./assets/carrusel/logo_NUNA_TERRA_web.png" alt="nuna terra logo">
+          <img src="./assets/carrusel/tribalsoul.png" alt="tribal soul logo">
+          <img src="./assets/carrusel/saphirus.png" alt="saphirus logo">
+          <!-- Se repiten logos del carrusel para suavisar el corte del loop -->
+          <img src="./assets/carrusel/f4d9ff796b4a70651883f6ece878ce6b.jpg" alt="iluminarte logo">
+          <img src="./assets/carrusel/images.jpg" alt="aromanza logo">
+          <img src="./assets/carrusel/Inciensos.jpg" alt="sagrada madre logo">
+          <img src="./assets/carrusel/logo_NUNA_TERRA_web.png" alt="nuna terra logo">
+          <img src="./assets/carrusel/tribalsoul.png" alt="tribal soul logo">
+          <img src="./assets/carrusel/saphirus.png" alt="saphirus logo">
+        </div>
       </div>
     </div>
+
     <!-- Section discounts -->
-    <section class="container mb-5 mt-5">
-      <div class="row justify-content-evenly gap-3 gx-0">
-        <article class="card-discount col-xl-2 col-lg-3 col-md-5 col-sm-5 col-6">
-          <img class="first-content" src="./assets/productos/Sahumerios-cannabis.jpeg" alt="Sahumerios de cannabis">
-          <div class="second-content">
-            <p>Sahumerio de cannabis</p>
-            <p class="new-price">$2999</p>
-            <p class="old-price">$3000</p>
-          </div>
-        </article>
-        <article class="card-discount col-xl-2 col-lg-3 col-md-5 col-sm-5 col-6">
-          <img class="first-content" src="./assets/productos/Sahumerios-cannabis.jpeg" alt="Sahumerios de cannabis">
-          <div class="second-content">
-            <p class="new-price">$2999</p>
-            <p class="old-price">$3000</p>
-          </div>
-        </article>
-        <article class="card-discount col-xl-2 col-lg-3 col-md-5 col-sm-5 col-6">
-          <img class="first-content" src="./assets/productos/Sahumerios-cannabis.jpeg" alt="Sahumerios de cannabis">
-          <div class="second-content">
-            <p class="new-price">$2999</p>
-            <p class="old-price">$3000</p>
-          </div>
-        </article>
-        <article class="card-discount col-xl-2 col-lg-3 col-md-5 col-sm-5 col-6">
-          <img class="first-content" src="./assets/productos/Sahumerios-cannabis.jpeg" alt="Sahumerios de cannabis">
-          <div class="second-content">
-            <p class="new-price">$2999</p>
-            <p class="old-price">$3000</p>
-          </div>
-        </article>
-        <article class="card-discount col-xl-2 col-lg-3 col-md-5 col-sm-5 col-6">
-          <img class="first-content" src="./assets/productos/Sahumerios-cannabis.jpeg" alt="Sahumerios de cannabis">
-          <div class="second-content">
-            <p class="new-price">$2999</p>
-            <p class="old-price">$3000</p>
-          </div>
-        </article>
+    <section>
+      <h3 class="text-center p-4 text-white" id="promociones">Promociones</h3>
+      <div class="cards container mb-5">
+        <div class="row gap-3 justify-content-center">
+          <article class="card-descuento">
+            <img src="./assets/productos/cascada-coral.webp" alt="Cascada de humo con diseño de coral">
+            <div class="body-card">
+              <p>Cascada de humo</p>
+              <p>$5000</p>
+              <p class="old-price">$3000</p>
+              <button class="button-discount">Lo quiero!</button>
+            </div>
+          </article>
+          <article class="card-descuento">
+            <img src="./assets/productos/relicarios.webp" alt="Relicarios con cadena de plata">
+            <div class="body-card">
+              <p>Relicarios con cadena</p>
+              <p>$5000</p>
+              <p class="old-price">$3000</p>
+              <button class="button-discount">Lo quiero!</button>
+            </div>
+          </article>
+          <article class="card-descuento">
+            <img src="./assets/productos/esencia-humificador.webp" alt="Botella de esencia de coco para humidificador">
+            <div class="body-card">
+              <p>Esencia de coco</p>
+              <p>$5000</p>
+              <p class="old-price">$3000</p>
+              <button class="button-discount">Lo quiero!</button>
+            </div>
+          </article>
+          <article class="card-descuento">
+            <img src="./assets/productos/cartas-hadas.webp" alt="Caja de cartas de tarot con diseño de hadas">
+            <div class="body-card">
+              <p>Cartas tarot hadas</p>
+              <p>$5000</p>
+              <p class="old-price">$3000</p>
+              <button class="button-discount">Lo quiero!</button>
+            </div>
+          </article>
+          <article class="card-descuento">
+            <img src="./assets/productos/pendulos-piedras.webp" alt="Péndulo hecho con piedras semipreciosas">
+            <div class="body-card">
+              <p>Pendulo de piedras</p>
+              <p>$5000</p>
+              <p class="old-price">$3000</p>
+              <button class="button-discount">Lo quiero!</button>
+            </div>
+          </article>
+        </div>
       </div>
+      <button class="button-more mb-3"><a href="./pages/promociones.html">Ver más</a></button>
     </section>
   </main>
 
-  <footer>
-    <p class="footer-copy">© 2025 Mistic. Todos los derechos reservados.</p>
-    <div class="footer-redes">
-      <a class="iconos-footer" href="https://x.com/?lang=es"><i class='bxl bx-twitter-x bx-burst bx-sm'></i></a>
-      <a class="iconos-footer" href="https://www.facebook.com/?locale=es_LA"><i
-          class="bxl bx-facebook-circle bx-burst bx-sm"></i></a>
-      <a class="iconos-footer" href="https://www.instagram.com/"><i class="bxl bx-instagram bx-burst bx-sm"></i></a>
+  <footer class="footer-section pt-5 pb-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <h5 class="footer-heading">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="#">Volver arriba</a></li>
+            <li><a href="./pages/productos.html">Productos</a></li>
+            <li><a href="./pages/promociones.html">Promociones</a></li>
+            <li><a href="./pages/contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <h5 class="footer-heading">Contacto</h5>
+          <ul class="contact-info">
+            <li><i class='bx bx-location'></i> 123 Av. Siempreviva, BA 1665</li>
+            <li><i class='bx bx-phone'></i> +54 11 1234-5678</li>
+            <li><i class='bx bx-envelope'></i> info@mistic.com</li>
+            <li><i class='bx bx-clock-2'></i> Lun-Vie: 9:00 - 18:00</li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <h5 class="footer-heading">Newsletter</h5>
+          <p>Subscribete para las novedades semanales</p>
+          <form class="newsletter-form">
+            <div class="input-group mb-3">
+              <input type="email" class="form-control" placeholder="Your email" required>
+              <button class="btn boton-subscribe" type="submit">Subscribe</button>
+            </div>
+          </form>
+          <div class="social-icons mt-3">
+            <a href="https://github.com/Nahuel2121/mistic" target="_blank" class="social-icon"><i class="bxl bx-github"></i></a>
+            <a href="https://www.instagram.com" target="_blank" class="social-icon"><i class="bxl bx-instagram"></i></a>
+            <a href="https://www.facebook.com" target="_blank" class="social-icon"><i class='bxl bx-facebook'></i> </a>
+          </div>
+        </div>
+      </div>
+      <hr class="footer-divider">
+      <div class="row footer-bottom">
+        <div class="col-md-6 text-center text-md-start">
+          <p class="mb-0">&copy; 2025 Mistic. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <a href="#" class="footer-bottom-link">Politica de privacidad</a>
+          <a href="#" class="footer-bottom-link">Terminos de servicio</a>
+        </div>
+      </div>
     </div>
   </footer>
   <!-- Link de JS de bootstrap -->
