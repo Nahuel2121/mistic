@@ -4,15 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Productos</title>
+  <meta name="description"
+    content="Explora nuestro catálogo completo de productos esotéricos en Mistic. Desde sahumerios y péndulos hasta nuestra línea de merch exclusiva." />
+  <meta name="keywords"
+    content="Productos Mistic, catálogo, sahumerios, mándala, cascada de humo, ojo turco, péndulo, merch, ropa, tienda esotérica" />
+  <title>Productos Esotéricos y Merch | Mistic</title>
   <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
   <!-- Link bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <!-- Link de iconos -->
+  <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
   <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
-  <link href='https://cdn.boxicons.com/fonts/animations.min.css' rel='stylesheet'>
-  <link href='https://cdn.boxicons.com/fonts/transformations.min.css' rel='stylesheet'>
   <!-- Link css propio -->
   <link rel="stylesheet" href="../css/styles.css" />
 </head>
@@ -21,13 +24,19 @@
   <header>
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html"><img class="logo-nav" src="../assets/mistic_logo.png" alt="logo de la pagina"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <div id="menuToggle">
+            <input id="checkbox" type="checkbox">
+            <label class="toggle" for="checkbox">
+              <div class="bar bar--top"></div>
+              <div class="bar bar--middle"></div>
+              <div class="bar bar--bottom"></div>
+            </label>
+          </div>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div class="collapse navbar-collapse justify-content-center gap-3" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
             </li>
@@ -40,162 +49,211 @@
             <li class="nav-item">
               <a class="nav-link" href="./contacto.html">Contacto</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./nosotros.html">Nosotros</a>
-            </li>
           </ul>
+          <a href="#" class="cart-icon">
+            <i class='bx bxs-cart bx-md'></i>
+          </a>
         </div>
       </div>
     </nav>
   </header>
 
   <main>
-    <section class="container-fluid mb-5">
-      <h1 class="text-center p-10">Productos</h1>
-
-      <div class="contenedor-productos row justify-content-center justify-content-md-evenly gx-0">
-
+    <section class="container mb-5">
+      <h1 class="text-center p-10 text-white">Productos</h1>
+      <div class="row justify-content-center justify-content-md-evenly gx-0">
         <article class="card-productos">
           <img src="../assets//productos/Sahumerios-cannabis.jpeg" alt="sahumerios de cannabis">
-          <div class="card-body">
-            <p class="card-title">Sahumerios cannabis</p>
-            <p class="card-text">$5000</p>
-            <button class="boton-productos">Añadir al carrito</button>
+          <p class="card-titulo">Sahumerios cannabis</p>
+          <div class="card-footer">
+            <span class="precio">$5000</span>
+            <button class="cart-btn"><i class='bx  bxs-cart-plus'></i></button>
           </div>
         </article>
         <article class="card-productos">
           <img src="../assets/productos/alfombra_mandala.png" alt="alfombra diseño de mandala">
-          <div class="card-body">
-            <p class="card-title">Alfombra mandala</p>
-            <p class="card-text">$5000</p>
-            <button class="boton-productos">Añadir al carrito</button>
+          <p class="card-titulo">Alfombra mándala</p>
+          <div class="card-footer">
+            <span class="precio">$5000</span>
+            <button class="cart-btn"><i class='bx  bxs-cart-plus'></i></button>
           </div>
         </article>
         <article class="card-productos">
           <img src="../assets/productos/cascada-coral.webp" alt="cascada de humo coral">
-          <div class="card-body">
-            <p class="card-title">Cascada de humo coral</p>
-            <p class="card-text">$5000</p>
-            <button class="boton-productos">Añadir al carrito</button>
+          <p class="card-titulo">Cascada de humo coral</p>
+          <div class="card-footer">
+            <span class="precio">$5000</span>
+            <button class="cart-btn"><i class='bx  bxs-cart-plus'></i></button>
           </div>
         </article>
         <article class="card-productos">
           <img src="../assets/productos/ojo-turco.webp" alt="pulsera de ojo turco">
-          <div class="card-body">
-            <p class="card-title">Pulsera ojo turco</p>
-            <p class="card-text">$5000</p>
-            <button class="boton-productos">Añadir al carrito</button>
+          <p class="card-titulo">Pulsera ojo turco</p>
+          <div class="card-footer">
+            <span class="precio">$5000</span>
+            <button class="cart-btn"><i class='bx  bxs-cart-plus'></i></button>
           </div>
         </article>
         <article class="card-productos">
           <img src="../assets/productos/pendulo-bronce.webp" alt="pendulo de bronce">
-          <div class="card-body">
-            <p class="card-title">Pendulo bronce</p>
-            <p class="card-text">$5000</p>
-            <button class="boton-productos">Añadir al carrito</button>
+          <p class="card-titulo">Péndulo bronce</p>
+          <div class="card-footer">
+            <span class="precio">$5000</span>
+            <button class="cart-btn"><i class='bx  bxs-cart-plus'></i></button>
           </div>
         </article>
       </div>
     </section>
 
-    <section class="container-fluid">
-      <div class="contenedor-productos row justify-content-center justify-content-md-evenly gx-0">
-
+    <section class="container mb-3">
+      <div class="row justify-content-center justify-content-md-evenly gx-0">
         <article class="card-productos">
           <img src="../assets/productos/pendulos-piedras.webp" alt="pendulo de piedras semipreciosa">
-          <div class="card-body">
-            <p class="card-title">Pendulo de piedras</p>
-            <p class="card-text">$5000</p>
-            <button class="boton-productos">Añadir al carrito</button>
+          <p class="card-titulo">Péndulo de piedras</p>
+          <div class="card-footer">
+            <span class="precio">$5000</span>
+            <button class="cart-btn"><i class='bx  bxs-cart-plus'></i></button>
           </div>
         </article>
         <article class="card-productos">
           <img src="../assets/productos/porta-sube-maneki.webp" alt="porta sube de gato maneki con correa">
-          <div class="card-body">
-            <p class="card-title">Gato maneki porta sube</p>
-            <p class="card-text">$5000</p>
-            <button class="boton-productos">Añadir al carrito</button>
+          <p class="card-titulo">Gato maneki porta sube</p>
+          <div class="card-footer">
+            <span class="precio">$5000</span>
+            <button class="cart-btn"><i class='bx  bxs-cart-plus'></i></button>
           </div>
         </article>
         <article class="card-productos">
           <img src="../assets/productos/relicarios.webp" alt="relicarios con cadena">
-          <div class="card-body">
-            <p class="card-title">Relicario con cadena</p>
-            <p class="card-text">$5000</p>
-            <button class="boton-productos">Añadir al carrito</button>
+          <p class="card-titulo">Relicario con cadena</p>
+          <div class="card-footer">
+            <span class="precio">$5000</span>
+            <button class="cart-btn"><i class='bx  bxs-cart-plus'></i></button>
           </div>
         </article>
         <article class="card-productos">
           <img src="../assets/productos/tarot-pano-liso.webp" alt="paño tarot liso negro">
-          <div class="card-body">
-            <p class="card-title">Paño Tarot Liso</p>
-            <p class="card-text">$5000</p>
-            <button class="boton-productos">Añadir al carrito</button>
+          <p class="card-titulo">Paño Tarot Liso</p>
+          <div class="card-footer">
+            <span class="precio">$5000</span>
+            <button class="cart-btn"><i class='bx  bxs-cart-plus'></i></button>
           </div>
         </article>
         <article class="card-productos">
           <img src="../assets/productos/sahumerios-rituales.webp" alt="sahumerios marca ritual">
-          <div class="card-body">
-            <p class="card-title">Sahumerios rituales</p>
-            <p class="card-text">$5000</p>
-            <button class="boton-productos">Añadir al carrito</button>
+          <p class="card-titulo">Sahumerios rituales</p>
+          <div class="card-footer">
+            <span class="precio">$5000</span>
+            <button class="cart-btn"><i class='bx  bxs-cart-plus'></i></button>
           </div>
         </article>
       </div>
     </section>
-    <section class="section-merch">
-      <h2 class="text-center">Merch</h2>
-      <div class="contenedor-productos row justify-content-center justify-content-md-evenly gx-0">
+    <section class="mb-5 container">
+      <h2 class="text-center text-white">Merch</h2>
+      <div class="row justify-content-center justify-content-md-evenly gx-0">
         <article class="card-productos">
           <img src="../assets/merch/gorra-mistic.webp" alt="gorra marca mistic color negro">
-          <div class="card-body">
-            <p class="card-title">Gorra negra</p>
-            <p class="card-text">$5000</p>
-            <button class="boton-productos">Añadir al carrito</button>
+          <p class="card-titulo">Gorra negra</p>
+          <div class="card-footer">
+            <span class="precio">$5000</span>
+            <button class="cart-btn"><i class='bx  bxs-cart-plus'></i></button>
           </div>
         </article>
         <article class="card-productos">
           <img src="../assets/merch/remera-mistic.webp" alt="remera mistic estampada negra">
-          <div class="card-body">
-            <p class="card-title">remera mistic</p>
-            <p class="card-text">$5000</p>
-            <button class="boton-productos">Añadir al carrito</button>
+          <p class="card-titulo">Remera mistic</p>
+          <div class="card-footer">
+            <span class="precio">$5000</span>
+            <button class="cart-btn"><i class='bx  bxs-cart-plus'></i></button>
           </div>
         </article>
         <article class="card-productos">
           <img src="../assets/merch/buzo-mistic.webp" alt="buzo mistic color negro">
-          <div class="card-body">
-            <p class="card-title">Hoodie</p>
-            <p class="card-text">$5000</p>
-            <button class="boton-productos">Añadir al carrito</button>
+          <p class="card-titulo">Hoodie</p>
+          <div class="card-footer">
+            <span class="precio">$5000</span>
+            <button class="cart-btn"><i class='bx  bxs-cart-plus'></i></button>
           </div>
         </article>
         <article class="card-productos">
           <img src="../assets/merch/cargo-mistic.webp" alt="pantalon cargo mistic negro">
-          <div class="card-body">
-            <p class="card-title">Pantalon cargo</p>
-            <p class="card-text">$5000</p>
-            <button class="boton-productos">Añadir al carrito</button>
+          <p class="card-titulo">Pantalon cargo</p>
+          <div class="card-footer">
+            <span class="precio">$5000</span>
+            <button class="cart-btn"><i class='bx  bxs-cart-plus'></i></button>
           </div>
         </article>
         <article class="card-productos">
           <img src="../assets/merch/gorro-mistic.webp" alt="gorro mistic color negro">
-          <div class="card-body">
-            <p class="card-title">Gorro mistic</p>
-            <p class="card-text">$5000</p>
-            <button class="boton-productos">Añadir al carrito</button>
+          <p class="card-titulo">Gorro mistic</p>
+          <div class="card-footer">
+            <span class="precio">$5000</span>
+            <button class="cart-btn"><i class='bx  bxs-cart-plus'></i></button>
           </div>
         </article>
       </div>
     </section>
+    <nav class="m-5" aria-label="navegacion de paginas">
+      <ul class="pagination justify-content-center">
+        <li class="page-item disabled"><a href="#" class="page-link">Previous</a></li>
+        <li class="page-item active">
+          <a href="#" class="page-link" aria-current="page">1</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="./productos2.html">2</a></li>
+        <li class="page-item"><a class="page-link" href="./productos3.html">3</a></li>
+        <li class="page-item"><a class="page-link" href="./productos2.html">Next</a></li>
+      </ul>
+    </nav>
   </main>
 
-  <footer>
-    <p class="footer-copy">© 2025 Mistic. Todos los derechos reservados.</p>
-    <div class="footer-redes">
-      <a class="iconos-footer" href="https://x.com/?lang=es"><i class='bxl bx-twitter-x bx-burst bx-sm'></i></a>
-      <a class="iconos-footer" href="https://www.facebook.com/?locale=es_LA"><i class="bxl bx-facebook-circle bx-burst bx-sm"></i></a>
-      <a class="iconos-footer" href="https://www.instagram.com/"><i class="bxl bx-instagram bx-burst bx-sm"></i></a>
+  <footer class="footer-section pt-5 pb-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <h5 class="footer-heading">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="../index.html">Página principal</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="./promociones.html">Promociones</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <h5 class="footer-heading">Contacto</h5>
+          <ul class="contact-info">
+            <li><i class='bx bx-location'></i> 123 Av. Siempreviva, BA 1665</li>
+            <li><i class='bx bx-phone'></i> +54 11 1234-5678</li>
+            <li><i class='bx bx-envelope'></i> info@mistic.com</li>
+            <li><i class='bx bx-clock-2'></i> Lun-Vie: 9:00 - 18:00</li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <h5 class="footer-heading">Newsletter</h5>
+          <p>Subscribete para las novedades semanales</p>
+          <form class="newsletter-form">
+            <div class="input-group mb-3">
+              <input type="email" class="form-control" placeholder="Your email" required>
+              <button class="btn boton-subscribe" type="submit">Subscribe</button>
+            </div>
+          </form>
+          <div class="social-icons mt-3">
+            <a href="https://github.com/Nahuel2121/mistic" target="_blank" class="social-icon"><i class="bxl bx-github"></i></a>
+            <a href="https://www.instagram.com" target="_blank" class="social-icon"><i class="bxl bx-instagram"></i></a>
+            <a href="https://www.facebook.com" target="_blank" class="social-icon"><i class='bxl bx-facebook'></i> </a>
+          </div>
+        </div>
+      </div>
+      <hr class="footer-divider">
+      <div class="row footer-bottom">
+        <div class="col-md-6 text-center text-md-start">
+          <p class="mb-0">&copy; 2025 Mistic. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <a href="#" class="footer-bottom-link">Politica de privacidad</a>
+          <a href="#" class="footer-bottom-link">Terminos de servicio</a>
+        </div>
+      </div>
     </div>
   </footer>
   <!-- Link de JS de bootstrap -->
