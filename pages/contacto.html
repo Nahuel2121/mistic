@@ -4,6 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Contacta con Mistic. Encuéntranos en nuestra dirección, llámanos o envíanos un mensaje a través de nuestro formulario. Estamos aquí para ayudarte." />
+  <meta name="keywords"
+    content="Contacto Mistic, contactar, teléfono, dirección, ubicación, horario, tienda esotérica, formulario de contacto" />
   <title>Mistic - Contacto</title>
   <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
   <!-- Link bootstrap -->
@@ -12,8 +16,6 @@
   <!-- Link de iconos -->
   <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
   <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
-  <link href='https://cdn.boxicons.com/fonts/animations.min.css' rel='stylesheet'>
-  <link href='https://cdn.boxicons.com/fonts/transformations.min.css' rel='stylesheet'>
   <!-- Link css propio -->
   <link rel="stylesheet" href="../css/styles.css" />
 </head>
@@ -22,76 +24,138 @@
   <header>
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html"><img class="logo-nav" src="../assets/mistic_logo.png"
-            alt="logo de la pagina"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <div id="menuToggle">
+            <input id="checkbox" type="checkbox">
+            <label class="toggle" for="checkbox">
+              <div class="bar bar--top"></div>
+              <div class="bar bar--middle"></div>
+              <div class="bar bar--bottom"></div>
+            </label>
+          </div>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div class="collapse navbar-collapse justify-content-center gap-3" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./productos.html">Productos</a>
+              <a class="nav-link" aria-current="page" href="./productos.html">Productos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./promociones.html">Promociones</a>
+              <a class="nav-link" aria-current="page" href="./promociones.html">Promociones</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">Contacto</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./nosotros.html">Nosotros</a>
+              <a class="nav-link active" aria-current="page" href="#">Contacto</a>
             </li>
           </ul>
+          <a href="#" class="cart-icon">
+            <i class='bx bxs-cart bx-md'></i>
+          </a>
         </div>
       </div>
     </nav>
   </header>
   <main>
-    <h1 class="text-center m-2">Contacto</h1>
-    <div class="form-mapa">
-      <form class="form-contacto" action="#">
-        <div class="form-floating mb-3">
-          <input type="text" class="form-control" id="floatingName" placeholder="Nombre">
-          <label for="floatingName">Nombre</label>
-        </div>
-        <div class="form-floating mb-3">
-          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-          <label for="floatingInput">Email</label>
-        </div>
-        <div class="form-floating">
-          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-            style="height: 100px"></textarea>
-          <label for="floatingTextarea2">Comentarios</label>
-        </div>
-        <input class="boton-form" type="submit" value="Enviar">
-      </form>
-      <section class="section-ubicacion">
-        <h2>📍 Nuestra ubicación</h2>
-        <div class="mapa">
-          <iframe class="mapa-embed"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2764.26662563222!2d-58.75972153009988!3d-34.520993021919935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc981edf385943%3A0xb96eb60a171ed971!2sPizza%20Pueblo!5e0!3m2!1ses-419!2sar!4v1759088393734!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
-        </div>
-      </section>
-    </div>
+    <section class="contact-section">
+      <div class="contact-container">
+        <div class="contact-form">
+          <h1>Contáctanos</h1>
+          <h2>Nos encantaria saber de vos!</h2>
 
-    <section class="informacion">
-      <p><i class="bx bx-location"></i> Av. Siempre viva</p>
-      <p><i class="bx bx-phone"></i> 11 6666-6666</p>
-      <p><i class='bx  bx-envelope-open'></i> Jaimitojesus@gmail.com</p>
+          <form>
+            <div class="form-row">
+              <input type="email" placeholder="Introducir un email valido" required />
+              <input type="text" placeholder="Introduzca su nombre" required />
+            </div>
+
+            <div class="form-row">
+              <input type="text" placeholder="Introduzca su direccion" />
+              <input type="tel" placeholder="Introduzca su telefono" />
+            </div>
+
+            <textarea placeholder="Mensaje" rows="4"></textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+
+        <div class="contact-info">
+          <div class="info-block">
+            <i class='bxr  bx-phone'></i>
+            <div>
+              <h4>Llamenos</h4>
+              <p>+54 11 1234-5678</p>
+            </div>
+          </div>
+
+          <div class="info-block">
+            <i class='bxr  bx-location'></i>
+            <div>
+              <h4>Ubicacion</h4>
+              <p>123 Av. Siempreviva</p>
+            </div>
+          </div>
+
+          <div class="info-block">
+            <i class='bxr  bx-clock-4'></i>
+            <div>
+              <h4>Horario de atencion</h4>
+              <p>Lun – Vie: 10hs – 18hs<br>Sab, Dom: Cerrado</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
   </main>
-  <footer>
-    <p class="footer-copy">© 2025 Mistic. Todos los derechos reservados.</p>
-    <div class="footer-redes">
-      <a class="iconos-footer" href="https://x.com/?lang=es"><i class='bxl bx-twitter-x bx-burst bx-sm'></i></a>
-      <a class="iconos-footer" href="https://www.facebook.com/?locale=es_LA"><i class="bxl bx-facebook-circle bx-burst bx-sm"></i></a>
-      <a class="iconos-footer" href="https://www.instagram.com/"><i class="bxl bx-instagram bx-burst bx-sm"></i></a>
+  <footer class="footer-section pt-5 pb-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <h5 class="footer-heading">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="../index.html">Página principal</a></li>
+            <li><a href="./productos.html">Productos</a></li>
+            <li><a href="./promociones.html">Promociones</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <h5 class="footer-heading">Contacto</h5>
+          <ul class="contact-info">
+            <li><i class='bx bx-location'></i> 123 Av. Siempreviva, BA 1665</li>
+            <li><i class='bx bx-phone'></i> +54 11 1234-5678</li>
+            <li><i class='bx bx-envelope'></i> info@mistic.com</li>
+            <li><i class='bx bx-clock-2'></i> Lun-Vie: 9:00 - 18:00</li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <h5 class="footer-heading">Newsletter</h5>
+          <p>Subscribete para las novedades semanales</p>
+          <form class="newsletter-form">
+            <div class="input-group mb-3">
+              <input type="email" class="form-control" placeholder="Your email" required>
+              <button class="btn boton-subscribe" type="submit">Subscribe</button>
+            </div>
+          </form>
+          <div class="social-icons mt-3">
+            <a href="https://github.com/Nahuel2121/mistic" target="_blank" class="social-icon"><i class="bxl bx-github"></i></a>
+            <a href="https://www.instagram.com" target="_blank" class="social-icon"><i class="bxl bx-instagram"></i></a>
+            <a href="https://www.facebook.com" target="_blank" class="social-icon"><i class='bxl bx-facebook'></i> </a>
+          </div>
+        </div>
+      </div>
+      <hr class="footer-divider">
+      <div class="row footer-bottom">
+        <div class="col-md-6 text-center text-md-start">
+          <p class="mb-0">&copy; 2025 Mistic. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <a href="#" class="footer-bottom-link">Politica de privacidad</a>
+          <a href="#" class="footer-bottom-link">Terminos de servicio</a>
+        </div>
+      </div>
     </div>
   </footer>
   <!-- Link de JS de bootstrap -->
