@@ -1,82 +1,66 @@
-@mixin cards-productos {
-    width: 14em;
-    height: 25em;
-    margin-bottom: 1em;
-    border-radius: 1em;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
-    background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
-    flex-shrink: 0;
-}
+// card de index y productos
 
-img {
-    width: 100%;
-    height: 60%;
-    object-fit: fill;
-}
-
-.card-body {
-    padding: 1em 0;
+.card-productos {
+    width: 15rem;
+    height: 22rem;
+    background-color: $primary-color;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 40%;
-    text-align: center;
-}
-
-@mixin card-discount {
-    width: 13rem;
-    height: 16rem;
-    transition: all 0.4s;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
-    font-size: 30px;
-    font-weight: 900;
 
     &:hover {
-        border-radius: 15px;
-        cursor: pointer;
-        transform: scale(1.0);
-        box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
-        background: rgb(103, 151, 255);
+        transform: translateY(-5px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
     }
 
-    &:hover .first-content {
-        height: 0px;
-        opacity: 0;
-        object-fit: fill;
-    }
-
-    &:hover .second-content {
-        opacity: 1;
-        font-size: 1.3rem;
-        transform: rotate(0deg);
-    }
-
-
-    .first-content {
-        height: 100%;
+    img {
         width: 100%;
-        transition: all 0.4s;
-        opacity: 1;
+        height: 60%;
         border-radius: 15px;
-        object-fit: fill;
+        object-fit: cover;
+        flex-shrink: 0;
     }
 
-
-
-    .second-content {
-        height: 0%;
-        width: 100%;
-        text-align: center;
-        opacity: 0;
-        border-radius: 15px;
-        transition: all 0.4s;
-        transform: rotate(180deg);
+    .card-titulo {
+        font-size: 1.2rem;
+        margin-top: 10px;
+        color: $alternative-color2;
+        font-family: $fuente-opcional;
     }
 
+    .card-footer {
+        display: flex;
+        margin-top: auto;
+        justify-content: space-between;
+        align-items: center;
 
+        .precio {
+            font-family: $fuente-secundaria;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        .cart-btn {
+            background: none;
+            border: 1px solid #444;
+            color: #fff;
+            border-radius: 10px;
+            padding: 6px 10px;
+            cursor: pointer;
+            transition: background 0.3s;
+
+            &:hover {
+                background: #444;
+            }
+        }
+    }
 }
 
 @mixin bordes {
@@ -123,36 +107,101 @@ img {
     }
 }
 
+.cards {
+    .card-descuento {
 
+        width: 15rem;
+        height: 25rem;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 20px;
+        border-radius: 20px;
+        background: $primary-color;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
 
-.card-promociones {
-    width: 15rem;
-    height: 25rem;
-    font-family: $fuente-opcional2;
-    color: $dark;
-    background-color: $secondary-color;
+        &:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        img {
+            width: 100%;
+            height: 60%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .body-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 5px;
+            color: $light;
+            font-family: $fuente-secundaria;
+
+            .old-price {
+                font-size: 0.8rem;
+                margin-top: -20px;
+                text-decoration: line-through 2px #ff0000;
+            }
+        }
+    }
 }
 
 .card-borde {
     @include bordes();
 }
 
-.card-productos {
-    font-family: $fuente-opcional;
-    @include cards-productos();
-}
+.card-promo {
+    width: 15rem;
+    height: 26rem;
+    border-radius: 30px;
+    background: $primary-color;
+    padding: 15px;
+    text-align: center;
+    color: $light;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
 
-.card-discount {
-    @include card-discount();
-
-    .new-price {
-        font-size: 1.5rem;
-        font-family: $fuente-secundaria;
+    &:hover {
+        transform: translateY(-5px);
     }
 
-    .old-price {
-        @extend .new-price;
-        font-size: 1.2rem;
-        text-decoration: line-through 2px #ff0000;
+    img {
+        width: 100%;
+        height: 60%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .body-promo {
+        margin-top: 15px;
+        font-family: $fuente-secundaria;
+        font-weight: 600;
+        font-size: 1rem;
+        color: $light;
+
+        .new-price {
+            font-size: 1rem;
+        }
+
+        .old-price {
+            font-size: 0.8rem;
+            margin-top: -20px;
+            text-decoration: line-through 2px #ff0000;
+        }
+    }
+
+    button {
+        width: 10rem;
+        height: 2rem;
+        background: $secondary-color;
+        border-radius: 10px;
+        border: none;
+        color: $light;
+
+        &:hover {
+            background-color: #2b3f18;
+
+        }
     }
 }
